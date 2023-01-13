@@ -2,7 +2,7 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
-nav,header{
+nav{
     display: flex;
     justify-content: space-around;
     background-color: #ffc017;
@@ -34,28 +34,45 @@ nav ul li:last-of-type {
     border-radius: 20px;
 }
 header{
-    display: flex;
-    justify-content: space-around;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
     position: relative;
 }
 .container-svg{
-    position: relative;
-    left:120px;
+    position: absolute;
+    right: 0px;
+    width: 585px;
+    display: block;
 }
 .container-text{
-    margin-left: 10%;
+    margin: 0 64px;
+    min-width: 0;
+    max-width: 1192px;
+    width: 100%;
+}
+.container-text2 {
+    display: flex;
+    width: 100%;
+}
+.container-text3 {
+    display: flex;
+    justify-content: center;
+}
+.container-text1{
+    z-index: 2;
     padding-top: 93px;
-    padding-bottom: 94px;
+    padding-bottom: 92px;
     display: flex;
     flex-direction: column;
+    width: 550px;
 }
-.container-text h1 {
+.container-text1 h1 {
     font-size: 7em;
     margin-bottom: 30px;
     font-family: 'Spectral', serif;
     letter-spacing: -9px;
 }
-.container-text p {
+.container-text1 p {
     font-size: 1.5em;
     margin-bottom: 40px;
 }
@@ -76,7 +93,7 @@ cursor: pointer;
     justify-content: center;
 }
 .largeBox2{
-    margin: 0 11%;
+    margin: 0 64px;
 }
 .largeBox3{
    padding-top: 40px;
@@ -86,7 +103,7 @@ cursor: pointer;
 .largeBoxNav{
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 .largeBoxNav div:first-of-type{
     padding-left: 16px;
@@ -99,11 +116,17 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    margin-right: -16px;
+    margin-left: -16px;
+    width: calc(100% + 32px);
+}
+.largeBox5 {
+    width: 100%;
 }
 .littleBox {
     display: flex;
     padding: 0px 16px;
-    max-width: 30.3%;
+    max-width: 29.3%;
     flex-basis: 33.3%;
     margin-bottom: 24px;
     flex-grow: 0;
@@ -237,7 +260,7 @@ margin-bottom: 10px;
     background-color: lightgrey;
     cursor: pointer;
 }
-aside{
+.SecondAside{
     grid-column: 9 / span 4;
     grid-row-start: 1;
 }
@@ -245,39 +268,46 @@ aside{
     position: sticky;
     top: 107px;
 }
-.AsideUpperPart {
+.AsideUpperPart,.AsideUpperPartTemp {
     border-bottom: 1px solid rgba(230, 230, 230, 1);
     padding-bottom: 24px;
 }
-.AsideUpperPart div:first-of-type{
+.AsideUpperPart div:first-of-type, .AsideUpperPartTemp div:first-of-type{
     margin-bottom: 16px;
 }
-aside p {
+.SecondAside, .AsideContTemp p {
     font-size: 0.8em;
     font-weight: 600;
 }
-aside .FirstList, .SecondList {
+.FirstListTemp, .FirstList, .SecondList {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
 }
-aside li {
+.SecondAside li, .AsideContTemp li, .SecondList li, .FirstListTemp li {
     margin-bottom: 8px;
     cursor: pointer;
     color: rgba(117, 117, 117, 1);
+    font-size: 1em;
+    font-weight: lighter;
+}
+.FirstListTemp li {
     font-size: 0.8em;
 }
-aside .FirstList li{
+.FirstListTemp li,.FirstList li, .SecondList li{
     margin-right: 8px;
     padding: 6px 16px;
     border: 1px solid rgba(230, 230, 230, 1);
     border-radius: 3px;
 }
-aside .SecondList{
+.AsideContTemp, .SecondList{
     padding: 24px 0;
 }
-aside .SecondList li{
+.AsideContTemp .SecondList li{
     margin-right: 20px;
+}
+.AsideUpperPartTemp {
+    margin: 0px 48px;
 }
 
 
@@ -291,4 +321,109 @@ aside .SecondList li{
     background-color: #1a8917 !important;
     color: white !important;
     transition: 0.5s ease-in-out;
+}
+@media screen and (min-width: 1080px) {
+    .container-svg{
+        right: 0;
+    }   
+}
+@media screen and (max-width: 1079px) {
+    .container-svg{
+        left: 500px;
+    }   
+}
+@media screen and (max-width: 904px) {
+    .container-svg{
+        left: 420px;
+    } 
+    .container-text1 {
+        width: 500px;
+    }
+    .container-article2{
+        grid-template-columns: 1fr;
+    }
+    .SecondAside {
+        display: none;
+    }
+    article {
+        padding-top: 40px;
+    }
+}
+@media screen and (max-width: 552px) {
+    .container-text1 {
+        width: 100%
+    }  
+    .littleBox {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    .largeBox2 {
+        margin: 0 24px;
+    }
+    .container-article1 {
+        margin: 0 24px;
+    }
+.container-LeftColumn2{
+    margin-bottom: 32px;
+}
+.RectboxCont p {
+    display: none;
+}
+.RectboxCont h3 {
+    font-size: 0.9em;
+}
+.RightPart img {
+    height: 100px;
+    width: 100px;
+}
+.RectButton button {
+    display: none;
+}
+.AsideUpperPartTemp{
+    margin: 0px 24px;
+}
+}
+@media screen and (max-width: 728px) {
+.container-svg{
+    display: none;
+}    
+nav li:nth-child(-n + 3) {
+    display: none;
+}
+}
+@media screen and (min-width: 904px) and (max-width: 1079.98px){
+    .littleBox {
+        max-width: 46%;
+        flex-basis: 46%;
+    }
+    .container-article2{
+        grid-column-gap: 32px;
+    }
+}
+@media screen and (min-width: 728px) and (max-width: 904px) {
+    .container-text1 h1 {
+        font-size: 5.5em;
+    }
+    .largeBox2{
+        margin: 0 48px;
+    }
+}
+@media screen and (min-width: 552px) and (max-width: 728px) {
+    .container-text1 h1 {
+        font-size: 5.5em;
+    }
+}
+@media screen and (max-width: 552px){
+    .container-text1 h1 {
+        font-size: 4.5em;
+        letter-spacing: -0.05em;
+    }
+    nav li:nth-child(-n + 4) {
+        display: none;
+    }
+}
+@media screen and (min-width: 905px){
+    .AsideContTemp {
+        display: none;
+    }
 }
