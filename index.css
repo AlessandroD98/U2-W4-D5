@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Spectral:wght@400;500;600;700&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+nav,header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffc017;
+    border-bottom: 1px solid black;
+}
+nav{
+    padding: 20px 0px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+} 
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+nav ul li{
+    margin-right: 25px;
+    font-size: 0.9em;
+}
+nav li:hover{
+    cursor: pointer;
+}
+nav ul li:last-of-type {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.container-svg{
+    position: relative;
+    left:120px;
+}
+.container-text{
+    margin-left: 10%;
+    padding-top: 93px;
+    padding-bottom: 94px;
+    display: flex;
+    flex-direction: column;
+}
+.container-text h1 {
+    font-size: 7em;
+    margin-bottom: 30px;
+    font-family: 'Spectral', serif;
+    letter-spacing: -9px;
+}
+.container-text p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+button{
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    padding: 9px 50px;
+border-radius: 30px;
+font-family: 'Roboto', sans-serif;
+cursor: pointer;
+}
+.largeBox{
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+.largeBox1{
+    display: flex;
+    justify-content: center;
+}
+.largeBox2{
+    margin: 0 11%;
+}
+.largeBox3{
+   padding-top: 40px;
+   padding-bottom: 16px;
+   max-width: 1200px;
+}
+.largeBoxNav{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.largeBoxNav div:first-of-type{
+    padding-left: 16px;
+        margin-right: 10px;
+}
+.largeBoxNav p {
+    font-weight: bold;
+}
+.largeBox4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.littleBox {
+    display: flex;
+    padding: 0px 16px;
+    max-width: 30.3%;
+    flex-basis: 33.3%;
+    margin-bottom: 24px;
+    flex-grow: 0;
+}
+.littleBox span{
+    font-size: 1.7em;
+    color: lightgray;
+}
+.littleBox div :first-of-type {
+    margin-right: 16px;
+}
+.container-span{
+    position: relative;
+    top: -4px;
+    font-weight: 600;
+}
+.littleBox img {
+    border-radius: 30px;
+    width: 20px;
+}
+.littleBox-1, .littleBox-2 {
+    margin-bottom: 15px;
+}
+.littleBox-1 {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+.littleBox-2{
+    font-weight: bold;
+}
+.littleBox-3{
+    color: gray;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+article{
+    padding-top: 56px;
+}
+.container-article{
+    display: flex;
+    justify-content: center;
+}
+.container-article1{
+    margin: 0 64px;
+    max-width: 1200px;
+}
+.container-article2{
+    display: grid;
+    grid-template-columns: repeat(8,1fr) repeat(4, minmax(48px, 1fr));
+    grid-template-rows: 1fr;
+}
+.LeftColumn{
+    grid-row-start: 1;
+    grid-column: 1 / span 7;
+}
+.container-LeftColumn{
+    padding-top: 12px;
+}
+.container-LeftColumn1{
+    width: 100%;
+    height: 100%;
+}
+.container-LeftColumn2{
+    margin-bottom: 48px;
+    opacity: 1;
+}
+.container-LeftColumn3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+.RightPart img{
+    width: 200px;
+    aspect-ratio: auto 200 / 134;
+    height: 134px;
+}
+.LeftPart{
+    margin-right: 20px;
+    min-width: 0;
+    width: 100%;
+}
+.LeftPart div:first-of-type{
+    padding-bottom: 8px;
+}
+.RectboxTitle{
+    display: flex;
+    align-items: center;
+}
+.RectboxTitle img{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+.RectboxTitle p{
+    margin-left: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.RectboxBottom {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.RectboxCont h3{
+    font-size: 1.4em;
+font-weight: 800;
+margin-bottom: 10px;
+}
+.RectboxCont p, span{
+    color: rgba(117, 117, 117, 1);
+    font-size: 0.8em;
+}
+.RectboxBottom div:first-of-type{
+    display: flex;
+    align-items: center;
+}
+.RectButton button{
+    padding: 2px 8px;
+    color: rgba(117, 117, 117, 1);
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 100px;
+    margin-left: 5px;
+    font-size: 0.8em;
+    border: none;
+}
+.RectButton :hover{
+    background-color: lightgrey;
+    cursor: pointer;
+}
+aside{
+    grid-column: 9 / span 4;
+    grid-row-start: 1;
+}
+.AsideCont{
+    position: sticky;
+    top: 107px;
+}
+.AsideUpperPart {
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+    padding-bottom: 24px;
+}
+.AsideUpperPart div:first-of-type{
+    margin-bottom: 16px;
+}
+aside p {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+aside .FirstList, .SecondList {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside li {
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: rgba(117, 117, 117, 1);
+    font-size: 0.8em;
+}
+aside .FirstList li{
+    margin-right: 8px;
+    padding: 6px 16px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    border-radius: 3px;
+}
+aside .SecondList{
+    padding: 24px 0;
+}
+aside .SecondList li{
+    margin-right: 20px;
+}
+
+
+/* Animazione NavBar */
+
+.NewNavBar{
+    background-color:#fff;
+    transition: 0.5s ease-in-out;
+}
+.NewLi {
+    background-color: #1a8917 !important;
+    color: white !important;
+    transition: 0.5s ease-in-out;
+}
