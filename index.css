@@ -135,13 +135,11 @@ cursor: pointer;
     font-size: 1.7em;
     color: lightgray;
 }
-.littleBox div :first-of-type {
-    margin-right: 16px;
-}
 .container-span{
     position: relative;
     top: -4px;
     font-weight: 600;
+    margin-right: 16px;
 }
 .littleBox img {
     border-radius: 30px;
@@ -402,15 +400,36 @@ nav li:nth-child(-n + 3) {
 }
 @media screen and (min-width: 728px) and (max-width: 904px) {
     .container-text1 h1 {
-        font-size: 5.5em;
+        font-size: 5.8em;
     }
     .largeBox2{
         margin: 0 48px;
+    }
+    .container-text{
+        margin: 0px 48px;
+    }
+    .largeBox4 {
+        margin-left: -14px;
+        margin-right: -14px;
+        width: calc(100% + 28px);
+    }
+    .littleBox {
+        padding: 0px 14px;
+        flex-basis: 45%;
+        max-width: 46%;
     }
 }
 @media screen and (min-width: 552px) and (max-width: 728px) {
     .container-text1 h1 {
         font-size: 5.5em;
+    }
+    .container-text{
+        margin: 0px 24px;
+    }
+    .littleBox {
+        padding: 0px 14px;
+        flex-basis: 100%;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 552px){
@@ -421,9 +440,15 @@ nav li:nth-child(-n + 3) {
     nav li:nth-child(-n + 4) {
         display: none;
     }
+    .container-text{
+        margin: 0px 24px;
+    }
 }
 @media screen and (min-width: 905px){
     .AsideContTemp {
         display: none;
     }
 }
+/* .container-svg {
+    display: none;
+} */
