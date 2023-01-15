@@ -210,9 +210,6 @@ article{
     min-width: 0;
     width: 100%;
 }
-.LeftPart div:first-of-type{
-    padding-bottom: 8px;
-}
 .RectboxTitle{
     display: flex;
     align-items: center;
@@ -224,8 +221,8 @@ article{
 }
 .RectboxTitle p{
     margin-left: 8px;
-    font-size: 0.9em;
-    font-weight: bold;
+    font-size: 0.8em;
+    font-weight: 500;
 }
 .RectboxBottom {
     padding-top: 8px;
@@ -362,6 +359,9 @@ margin-bottom: 10px;
     .container-article1 {
         margin: 0 24px;
     }
+    .RectboxBottom {
+        padding-top: 4px;
+    }
 .container-LeftColumn2{
     margin-bottom: 32px;
 }
@@ -373,7 +373,8 @@ margin-bottom: 10px;
 }
 .RightPart img {
     height: 100px;
-    width: 100px;
+    aspect-ratio: auto 100 / 100;
+    width: 100px;  
 }
 .RectButton button {
     display: none;
@@ -397,6 +398,9 @@ nav li:nth-child(-n + 3) {
     }
     .container-article2{
         grid-column-gap: 32px;
+    }
+    .LeftColumn {
+        grid-column: 1 / span 8;
     }
 }
 @media screen and (min-width: 728px) and (max-width: 904px) {
