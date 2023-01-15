@@ -37,6 +37,7 @@ header{
     background-color: #ffc017;
     border-bottom: 1px solid black;
     position: relative;
+    overflow: hidden;
 }
 .container-svg{
     position: absolute;
@@ -327,7 +328,7 @@ margin-bottom: 10px;
 }
 @media screen and (max-width: 1079px) {
     .container-svg{
-        left: 500px;
+        left: 520px;
     }   
 }
 @media screen and (max-width: 904px) {
